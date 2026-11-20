@@ -21,9 +21,9 @@ dsh-lk-memory/
     └── client.js         # Web 端：侧边栏入口、全宽管理面板、设置配置页（React + 原生 CSS）
 ```
 
-### 安装（仅本地目录）
+### 安装
 
-本插件不发布 npm、也不上架插件市场，只从本地目录安装：
+从本地目录安装：
 
 ```bash
 git clone https://github.com/lkf777555/dsh-lk-memory.git

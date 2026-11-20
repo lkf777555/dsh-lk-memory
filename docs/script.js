@@ -19,7 +19,7 @@
       "flow.one.title": "Write", "flow.one.text": "Save a convention or decision as a Markdown memory. Mark it <code>enforcement: required</code> if it must always apply.",
       "flow.two.title": "Resolve", "flow.two.text": "DSH finds the project memory directory from the session working directory.",
       "flow.three.title": "Inject", "flow.three.text": "The index and required rules become part of the system prompt for the next turn.",
-      "install.eyebrow": "Install", "install.title": "Two steps.", "install.cli": "Clone it anywhere. Local-directory install only — the plugin is not published to npm or any marketplace.", "install.source": "Wire it into DSH with the CLI, or use Plugins → Add plugin and pick the folder. To update, pull the latest code and restart DSH.",
+      "install.eyebrow": "Install", "install.title": "Two steps.", "install.cli": "Clone the repository to any local directory.", "install.source": "Wire it into DSH with the CLI, or use Plugins → Add plugin and pick the folder. To update, pull the latest code and restart DSH.",
       "cta.eyebrow": "Changelog", "cta.title": "It keeps improving —<br><em>every change is logged.</em>", "cta.button": "Read the changelog",
       "log.eyebrow": "Changelog", "log.title": "Every change,<br><em>on the record.</em>", "log.intro": "What changed in dsh-lk-memory, and why.", "log.release.title": "First public release", "log.release.intro": "Memory injection, a management panel, and four DSH memory tools.", "log.added": "Added", "log.changed": "Changed", "log.item.one": "Project memory index injection into the system prompt.", "log.item.two": "Management panel: search, edit, create, delete, repair index.", "log.item.three": "Four tools: dsh_memory_list / read / write / forget.", "log.item.four": "Removed the old type taxonomy; only enforcement rules remain.", "log.item.five": "Reads and writes the DSH memory directory only.", "log.item.six": "Added bilingual docs and this website.", "log.next.eyebrow": "Next", "log.next.title": "Have an idea?<br><em>Open an issue.</em>", "log.next.button": "Suggest one"
     },
@@ -38,7 +38,7 @@
       "flow.one.title": "写入", "flow.one.text": "把约定和决策保存成 Markdown 记忆，必须始终生效的可以标记 <code>enforcement: required</code>。",
       "flow.two.title": "定位", "flow.two.text": "DSH 根据会话工作目录找到对应项目的记忆目录。",
       "flow.three.title": "注入", "flow.three.text": "索引和强制规则成为 system prompt 的一部分，下一轮会话即可使用。",
-      "install.eyebrow": "安装", "install.title": "两步接入。", "install.cli": "克隆到本地任意目录。插件只支持本地目录安装，不发布 npm、也不上架插件市场。", "install.source": "用命令行接入 DSH，或在插件页用 Add plugin 选择该目录。更新时拉取最新代码后重启 DSH 即可。",
+      "install.eyebrow": "安装", "install.title": "两步接入。", "install.cli": "把仓库克隆到本地任意目录。", "install.source": "用命令行接入 DSH，或在插件页用 Add plugin 选择该目录。更新时拉取最新代码后重启 DSH 即可。",
       "cta.eyebrow": "更新日志", "cta.title": "功能持续更新，<br><em>变化都记在日志里。</em>", "cta.button": "查看更新日志",
       "log.eyebrow": "更新记录", "log.title": "每次改动，<br><em>都有记录。</em>", "log.intro": "dsh-lk-memory 的版本变化，以及变化的原因。", "log.release.title": "首个公开版本", "log.release.intro": "包含记忆注入、管理面板和四个 DSH 记忆工具。", "log.added": "新增", "log.changed": "调整", "log.item.one": "项目记忆索引注入 system prompt。", "log.item.two": "管理面板：搜索、编辑、新建、删除、修复索引。", "log.item.three": "四个工具：dsh_memory_list / read / write / forget。", "log.item.four": "移除旧的类型分类，只保留强制规则。", "log.item.five": "只读写 DSH 记忆目录。", "log.item.six": "新增中英文文档和官网。", "log.next.eyebrow": "下一步", "log.next.title": "有想法？<br><em>欢迎提 issue。</em>", "log.next.button": "去提个建议"
     }

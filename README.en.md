@@ -14,7 +14,7 @@ A DSH-native project memory plugin for DeepSeek Harness. It stores project memor
 
 ## Install
 
-Local directory install only — no npm, no marketplace:
+Install from a local directory:
 
 ```bash
 git clone https://github.com/lkf777555/dsh-lk-memory.git

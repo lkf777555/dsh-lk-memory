@@ -6,7 +6,7 @@ DSH 插件：管理 DSH 自己的项目记忆（`~/.dsh/memory/projects/<slug>/m
 
 ## 安装
 
-只支持**本地目录安装**，不发布 npm，也不上架插件市场：
+从本地目录安装：
 
 ```bash
 git clone https://github.com/lkf777555/dsh-lk-memory.git
