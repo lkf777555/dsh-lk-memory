@@ -21,11 +21,22 @@ dsh-lk-memory/
     └── client.js         # Web 端：侧边栏入口、全宽管理面板、设置配置页（React + 原生 CSS）
 ```
 
-安装登记（由插件管理器自动维护，无需手动操作）：
+### 安装（仅本地目录）
 
-- `<DSH profile>/node_modules/dsh-lk-memory` → link 到上面的源码目录（由插件管理器维护）
+本插件不发布 npm、也不上架插件市场，只从本地目录安装：
+
+```bash
+git clone https://github.com/lkf777555/dsh-lk-memory.git
+```
+
+- **DSH 界面**：插件（Plugins）→ Add plugin → 选择克隆出的 `dsh-lk-memory` 目录
+- **命令行**：`dsh plugin --profile desktop add link:<克隆路径>\dsh-lk-memory`
+
+安装后由插件管理器自动登记：
+
+- `<DSH profile>/node_modules/dsh-lk-memory` → link 到源码目录
 - profile `package.json` 的 `dependencies` 与 `dsh.profile.bundles`
-- 改动 `lib/*.js` 后**重启 DSH** 生效（开发态即改即有，无需重新安装）
+- 更新插件：拉取最新代码后**重启 DSH** 即可（开发态改 `lib/*.js` 同样重启生效）
 
 ## 二、数据流总览
 

@@ -19,6 +19,7 @@ All notable changes to `dsh-lk-memory` are documented here.
 
 - Removed the old Claude-oriented memory type taxonomy. The plugin is centered on DSH memory and enforcement rules.
 - Removed all dependency on Claude Code memory directories.
+- Distribution is local-directory only: npm and marketplace channels are not used, and the package is marked private.
 - Added an MIT license and public package metadata.
 
 [1.0.0]: https://github.com/lkf777555/dsh-lk-memory/releases/tag/v1.0.0

@@ -1,6 +1,6 @@
 # dsh-lk-memory website
 
-This directory contains the static GitHub Pages site for dsh-lk-memory. It has no build step and is intentionally excluded from the npm package.
+This directory contains the static GitHub Pages site for dsh-lk-memory. It has no build step; the plugin itself installs from a local directory, so this site is the only web presence.
 
 Deployed automatically by `.github/workflows/pages.yml` on every push that touches `docs/`.
 

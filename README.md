@@ -6,13 +6,18 @@ DSH 插件：管理 DSH 自己的项目记忆（`~/.dsh/memory/projects/<slug>/m
 
 ## 安装
 
-发布到 npm 后，可通过 DSH 插件管理器安装：
+只支持**本地目录安装**，不发布 npm，也不上架插件市场：
 
 ```bash
-dsh plugin --profile desktop add dsh-lk-memory
+git clone https://github.com/lkf777555/dsh-lk-memory.git
 ```
 
-也可以在 DSH Community Market 中搜索 `dsh-lk-memory` 安装。
+克隆后二选一：
+
+- **DSH 界面**：插件（Plugins）→ Add plugin → 选择克隆出的 `dsh-lk-memory` 目录
+- **命令行**：`dsh plugin --profile desktop add link:<克隆路径>\dsh-lk-memory`
+
+更新插件：拉取最新代码后重启 DSH 即可。
 
 ## 功能
 

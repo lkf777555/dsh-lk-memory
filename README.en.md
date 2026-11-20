@@ -14,13 +14,18 @@ A DSH-native project memory plugin for DeepSeek Harness. It stores project memor
 
 ## Install
 
-Install from the DSH Community Market or npm:
+Local directory install only — no npm, no marketplace:
 
 ```bash
-dsh plugin --profile desktop add dsh-lk-memory
+git clone https://github.com/lkf777555/dsh-lk-memory.git
 ```
 
-You can also install it from the DSH Community Market. The package declares a standard `dsh.bundle.patch`, so DSH can discover and activate it through the plugin manager.
+Then either:
+
+- **DSH UI**: Plugins → Add plugin → select the cloned `dsh-lk-memory` directory, or
+- **CLI**: `dsh plugin --profile desktop add link:<clone-path>\dsh-lk-memory`
+
+To update, pull the latest code and restart DSH.
 
 ## Configuration
 
