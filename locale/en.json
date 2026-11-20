@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH memory",
+    "description": "Owns DSH project memory, injects it into conversations, and provides a management page to view, edit, create, and delete memories."
+  }
+}

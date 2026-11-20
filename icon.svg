@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="mBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b8cff"/>
+      <stop offset="0.55" stop-color="#3a63e8"/>
+      <stop offset="1" stop-color="#2440c0"/>
+    </linearGradient>
+    <linearGradient id="mGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="1" stop-color="#ffd43b"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#mBg)"/>
+  <!-- 打开的书（白色描边） -->
+  <path d="M32 20c-4.3-3.1-10-4.1-16-3.2v26.4c6-.9 11.7.1 16 3.2 4.3-3.1 10-4.1 16-3.2V16.8c-6-.9-11.7.1-16 3.2z"
+        fill="rgba(255,255,255,0.14)" stroke="#ffffff" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M32 20v26.4" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- 记忆节点：金色核心 + 四向引脚 -->
+  <circle cx="32" cy="32" r="4.2" fill="url(#mGlow)"/>
+  <g stroke="#ffd43b" stroke-width="2.2" stroke-linecap="round">
+    <path d="M32 22.5v4M32 37.5v4M22.5 32h4M37.5 32h4"/>
+  </g>
+  <circle cx="32" cy="32" r="1.6" fill="#ffffff"/>
+  <!-- 右上角记忆星芒 -->
+  <g fill="#ffd43b">
+    <path d="M50 10l1.8 4.6L56.4 16.4l-4.6 1.8L50 22.8l-1.8-4.6-4.6-1.8 4.6-1.8z"/>
+  </g>
+  <circle cx="45" cy="24" r="1.4" fill="#ffe9a8"/>
+</svg>

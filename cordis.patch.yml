@@ -1,0 +1,5 @@
+# dsh-lk-memory bundle 层：插入 DSH 记忆插件行。
+- insert:
+    - id: dsh-lk-memory
+      name: 'dsh-lk-memory'
+      config: {}

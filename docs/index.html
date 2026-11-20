@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="dsh-lk-memory — DeepSeek Harness 项目记忆插件。">
+  <title>dsh-lk-memory · DSH 项目记忆</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="cursor-glow"></div><div class="noise"></div><div class="progress"></div>
+  <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div>
+  <div class="page">
+    <div class="nav shell">
+      <a class="brand" href="#top" aria-label="dsh-lk-memory"><span class="brand-mark">LK</span><span>dsh-lk-memory</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features" data-i18n="nav.features">功能</a>
+        <a href="#how-it-works" data-i18n="nav.flow">工作方式</a>
+        <a href="./changelog.html" data-i18n="nav.changelog">更新日志</a>
+        <a class="nav-button" href="https://github.com/lkf777555/dsh-lk-memory">GitHub <span>↗</span></a>
+        <button class="lang-switch" type="button" data-lang="en">EN</button>
+      </div>
+      <button class="menu-button" type="button" aria-label="打开菜单" aria-expanded="false">☰</button>
+    </div>
+
+    <div id="top">
+      <div class="hero shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span><span data-i18n="hero.eyebrow">DeepSeek Harness 记忆插件</span></div>
+          <h1 data-i18n="hero.title">项目的约定和决策，<br><em>都记在 DSH 里。</em></h1>
+          <p class="hero-text" data-i18n="hero.text">dsh-lk-memory 把每个项目的约定、决策和经验保存到本地 DSH 记忆目录，并在每次会话自动注入相关内容。</p>
+          <div class="hero-actions"><a class="button button-primary" href="https://github.com/lkf777555/dsh-lk-memory"><span data-i18n="hero.github">查看源码</span> <span>↗</span></a><a class="button button-ghost" href="#install"><span data-i18n="hero.install">安装方式</span> <span>↓</span></a></div>
+          <div class="hero-meta"><span>MIT</span><span>DSH 原生</span><span>v1.0.0</span></div>
+        </div>
+        <div class="hero-visual reveal reveal-delay">
+          <div class="visual-label">SYSTEM / MEMORY_LAYER</div>
+          <div class="hero-card tilt">
+            <div class="window-bar"><span></span><span></span><span></span><code>~/.dsh/memory</code></div>
+            <div class="terminal-line"><b>$</b> dsh_memory_list</div>
+            <div class="memory-list">
+              <div class="memory-item selected"><span class="file-icon">◆</span><div><strong>code-style-clean-and-concise.md</strong><small data-i18n="memory.one">代码风格：清晰、简洁、可维护</small></div><i>required</i></div>
+              <div class="memory-item"><span class="file-icon">◇</span><div><strong>project-source-layout.md</strong><small data-i18n="memory.two">源码与 Git 目录结构</small></div></div>
+              <div class="memory-item"><span class="file-icon">◇</span><div><strong>four-lang-packs-not-three.md</strong><small data-i18n="memory.three">四种语言包必须同步维护</small></div></div>
+            </div>
+            <div class="terminal-line muted" data-i18n="memory.status">已加载 3 条记忆 · 注入 2.4 KB</div>
+          </div>
+          <div class="float-chip chip-a">MEMORY.md <span>↗</span></div><div class="float-chip chip-b">ENFORCEMENT: REQUIRED</div>
+        </div>
+      </div>
+
+      <div id="features" class="section shell">
+        <div class="section-heading reveal"><span class="eyebrow" data-i18n="features.eyebrow">功能</span><h2 data-i18n="features.title">把项目知识<br><em>变成会话上下文。</em></h2></div>
+        <div class="feature-grid">
+          <div class="feature-card feature-wide reveal"><div class="feature-number">01</div><h3 data-i18n="feature.one.title">自动注入</h3><p data-i18n="feature.one.text">会话开始时，项目记忆索引自动进入 system prompt；标记为强制规则的记忆整段置顶。</p><div class="code-chip">MEMORY.md <span>→</span> systemPrompt</div></div>
+          <div class="feature-card reveal reveal-delay"><div class="feature-number">02</div><h3 data-i18n="feature.two.title">可视化管理</h3><p data-i18n="feature.two.text">在 DSH 记忆面板里搜索、编辑、新建、删除记忆，索引不一致时一键修复。</p><div class="card-icon">⌘</div></div>
+          <div class="feature-card reveal"><div class="feature-number">03</div><h3 data-i18n="feature.three.title">默认安全</h3><p data-i18n="feature.three.text">只允许读写记忆目录内的 Markdown 文件，失效索引行自动过滤，写入前需要确认。</p><div class="card-icon">◈</div></div>
+          <div class="feature-card feature-wide reveal reveal-delay"><div class="feature-number">04</div><h3 data-i18n="feature.four.title">只用 DSH</h3><p data-i18n="feature.four.text">所有数据都在 <code>~/.dsh/memory</code> 下，不读写 DSH 之外的任何目录。</p><div class="path-chip">~/.dsh/memory/projects/&lt;slug&gt;/memory/</div></div>
+        </div>
+      </div>
+
+      <div id="how-it-works" class="section section-dark">
+        <div class="shell split"><div class="reveal"><span class="eyebrow" data-i18n="flow.eyebrow">工作方式</span><h2 data-i18n="flow.title">三步：<br><em>写入、定位、注入。</em></h2></div><div class="steps reveal reveal-delay"><div class="step"><span>01</span><div><h3 data-i18n="flow.one.title">写入</h3><p data-i18n="flow.one.text">把约定和决策保存成 Markdown 记忆，必须始终生效的可以标记 <code>enforcement: required</code>。</p></div></div><div class="step"><span>02</span><div><h3 data-i18n="flow.two.title">定位</h3><p data-i18n="flow.two.text">DSH 根据会话工作目录找到对应项目的记忆目录。</p></div></div><div class="step"><span>03</span><div><h3 data-i18n="flow.three.title">注入</h3><p data-i18n="flow.three.text">索引和强制规则成为 system prompt 的一部分，下一轮会话即可使用。</p></div></div></div></div>
+      </div>
+
+      <div id="install" class="section shell install-section"><div class="section-heading reveal"><span class="eyebrow" data-i18n="install.eyebrow">安装</span><h2 data-i18n="install.title">一条命令。</h2></div><div class="install-grid"><div class="install-card reveal"><div class="install-label">DSH CLI</div><pre><code>dsh plugin --profile desktop add dsh-lk-memory</code></pre><p data-i18n="install.cli">发布到 npm 后，用 DSH 插件管理器或 Community Market 安装。</p></div><div class="install-card reveal reveal-delay"><div class="install-label">SOURCE</div><pre><code>git clone https://github.com/lkf777555/dsh-lk-memory.git
+cd dsh-lk-memory
+npm pack --dry-run</code></pre><p data-i18n="install.source">也可以克隆源码本地打包，适合开发调试。</p></div></div></div>
+
+      <div class="section cta-section"><div class="shell cta-card reveal"><div><span class="eyebrow" data-i18n="cta.eyebrow">更新日志</span><h2 data-i18n="cta.title">功能持续更新，<br><em>变化都记在日志里。</em></h2></div><a class="button button-primary" href="./changelog.html"><span data-i18n="cta.button">查看更新日志</span> <span>↗</span></a></div></div>
+    </div>
+    <div class="footer shell"><div class="brand"><span class="brand-mark">LK</span><span>dsh-lk-memory</span></div><span>MIT © 2026 lkf777555</span><a href="https://github.com/lkf777555/dsh-lk-memory">GitHub ↗</a></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
