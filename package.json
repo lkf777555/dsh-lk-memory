@@ -1,6 +1,6 @@
 {
   "name": "dsh-lk-memory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSH-native project memory management, system-prompt injection, and model tools for DeepSeek Harness.",
   "license": "MIT",
   "private": true,
